@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Clock!</title>
+        <link rel="stylesheet" href="myclock.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="wrap">
+        <nav>
+            <ul>
+                <li onclick="Timer()"  >Timer</li>
+                <li onclick="Alarm()" >Alarm</li>
+                <li onclick="StopWatch()" >StopWatch</li>
+            </ul>
+        </nav>
+        <h1>Welcome to Clock.</h1>
+        <div id="clockBox">
+            <div id="clock" onload="Clock.currentTime()" ></div>
+            <div id="reset" onclick="Reset()"><span>Reset!</span></div>
+        </div>
+        <div id="infoBox">
+            <div id="timer"></div>
+            <div id="alarm"></div>
+            <div id="stopWatch"></div>
+        </div>
+            </div>
+        <footer id="footer">
+            <h3>&copy Ismail Iyada</h3>
+            <p>First web dev Project</p>
+        </footer>
+        </div>
+        <audio id="sec" src=""></audio>
+        <audio id="timeout" src="E:/WEB DESIGN/projects/clock/sounds/timesout.wav"></audio>
+        <script src="myclock.js"></script>
+    </body>
+</html>
