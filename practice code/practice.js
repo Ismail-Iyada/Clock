@@ -95,6 +95,3 @@ let d = new Date()
         date.fullFormat()
         date.halfFormate()
         console.log(date.session)
-
-
-        //change
